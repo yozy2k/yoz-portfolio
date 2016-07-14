@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Yoz Portfolio</title>
+<link href="script/css_01.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="script/photoswipe.css"> <!--Photoswipe-->
+<link rel="stylesheet" href="script/default-skin.css"> <!--Photoswipe-->
+<script src="script/photoswipe.min.js"></script> <!--Photoswipe-->
+<script src="script/photoswipe-ui-default.min.js"></script> <!--Photoswipe-->
+<script src="script/smooth_scroll.js"></script><!--smooth scroll-->
+<script>
+// smooth scroll
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 300, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+
+<body>
+
+<nav>
+<ul id="menu" >
+  <li><a href="#about">About</a></li>
+  <li><a href="#cg">CG</a></li>
+  <li><a href="#photography">Photography</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section>
+<div id="about">
+<h1 id="about_content">
+<div>Feel the beauty of love.
+  <br>May love be with you.
+</div>	
+</h1>
+</div>
+</section>
+
+<section>
+<div id="cg">
+<h1 id="cg_content">Visit CG gallery.</h1>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+var openPhotoSwipe = function() {
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [
+        {
+            src: './images/cg/c_001.jpg',
+            w: 300,
+            h: 300
+        },
+        {
+            src: './images/cg/c_002.jpg',
+            w: 320,
+            h: 240
+        },
+		        {
+            src: './images/cg/c_003.jpg',
+            w: 640,
+            h: 480
+        },
+        {
+            src: './images/cg/c_004.jpg',
+            w: 640,
+            h: 480
+        },
+        {
+            src: './images/cg/c_005.jpg',
+            w: 679,
+            h: 509
+        },
+        {
+            src: './images/cg/c_006.jpg',
+            w: 679,
+            h: 424
+        },
+        {
+            src: './images/cg/c_007.jpg',
+            w: 679,
+            h: 509
+        },
+        {
+            src: './images/cg/c_008.jpg',
+            w: 679,
+            h: 424
+        },
+		        {
+            src: './images/cg/c_009.jpg',
+            w: 679,
+            h: 424
+        },
+        {
+            src: './images/cg/c_010.jpg',
+            w: 679,
+            h: 679
+        },
+        {
+            src: './images/cg/c_011.jpg',
+            w: 679,
+            h: 424
+        },
+        {
+            src: './images/cg/c_012.jpg',
+            w: 679,
+            h: 330
+        },
+		        {
+            src: './images/cg/c_013.jpg',
+            w: 679,
+            h: 424
+        },
+        {
+            src: './images/cg/c_014.jpg',
+            w: 679,
+            h: 424
+        },
+        {
+            src: './images/cg/c_015.jpg',
+            w: 679,
+            h: 424
+        },
+        {
+            src: './images/cg/c_016.jpg',
+            w: 679,
+            h: 424
+        },
+        {
+            src: './images/cg/c_017.jpg',
+            w: 679,
+            h: 424
+        },
+        {
+            src: './images/cg/c_018.jpg',
+            w: 679,
+            h: 424
+        },
+		        {
+            src: './images/cg/c_019.jpg',
+            w: 679,
+            h: 424
+        },
+        {
+            src: './images/cg/c_020.jpg',
+            w: 619,
+            h: 875
+        },
+        {
+            src: './images/cg/c_021.jpg',
+            w: 679,
+            h: 480
+        },
+
+    ];
+    
+    // define options (if needed)
+    var options = {
+    };
+    
+    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+};
+
+document.getElementById('cg_content').onclick = openPhotoSwipe;
+</script>
+
+</div>
+</section>
+
+<section>
+<div id="photography">
+
+<h1 id="photography_content">Visit photo gallery.</h1>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+var openPhotoSwipe = function() {
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [
+        {
+            src: './images/photography/p_001.jpg',
+            w: 2048,
+            h: 1365
+        },
+        {
+            src: './images/photography/p_002.jpg',
+            w: 2048,
+            h: 1365
+        },
+        {
+            src: './images/photography/p_003.jpg',
+            w: 2048,
+            h: 1365
+        },
+        {
+            src: './images/photography/p_004.jpg',
+            w: 2048,
+            h: 1365
+        },
+        {
+            src: './images/photography/p_005.jpg',
+            w: 2048,
+            h: 1365
+        },
+        {
+            src: './images/photography/p_006.jpg',
+            w: 960,
+            h: 643
+        },
+        {
+            src: './images/photography/p_007.jpg',
+            w: 2048,
+            h: 1365
+        },
+        {
+            src: './images/photography/p_008.jpg',
+            w: 2048,
+            h: 1371
+        },
+        {
+            src: './images/photography/p_009.jpg',
+            w: 960,
+            h: 640
+        },
+        {
+            src: './images/photography/p_010.jpg',
+            w: 593,
+            h: 960
+        },
+        {
+            src: './images/photography/p_011.jpg',
+            w: 593,
+            h: 960
+        },
+    ];
+    
+    // define options (if needed)
+    var options = {
+    };
+    
+    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+};
+
+document.getElementById('photography_content').onclick = openPhotoSwipe;
+</script>
+
+</div>
+</section>
+
+<section>
+<div id="contact">
+<h1 id="contact_content">
+<a href="mailto:yozy2k@gmail.com">yozy2k@gmail.com</a>
+</h1>
+</div>
+</section>
+
+
+</body>
+</html>

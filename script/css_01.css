@@ -1,0 +1,481 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+html {
+}
+}
+
+
+/*R1024*/
+@media screen and (min-width:1024px) {
+		
+@font-face {
+	font-family:Trajan Pro;
+	src:url(../fonts/trajanpro-regular.otf);
+	}
+body {
+	margin:0px;
+	background-color:#000000;
+	}
+
+#menu {
+    padding: 0px;
+    margin: 0 0 10px 0;
+    position:fixed;
+	width:200px;
+	left:1%;
+	bottom:8%;
+	z-index:10;
+	font-family:"Trajan Pro";	
+}
+
+#menu li{
+	margin-top:10px;
+    font-size: 1.5rem;
+    display: block;
+}
+
+#menu li a{
+	color:#fff;
+	display: block;
+	text-decoration:none;
+	letter-spacing: 2px;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	text-shadow:1px 1px 2px #000000;
+}
+
+
+#menu:hover li a{
+	color:#5B5B5B;
+	text-shadow: 0px 0px 10px #5B5B5B;
+	text-decoration:none;
+}
+
+#menu li a:hover{
+	color: #fff;
+	text-shadow: 0px 0px 10px #fff;
+	padding-left: 10px;
+}
+	
+#about {
+	position:relative;
+	width:auto;
+	height:1080px;
+	background-image:url(../images/background_about.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:right;
+	}
+#about_content {
+	font-weight:normal;
+	margin:0;
+	width:100%;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:2rem;
+	position:relative;
+	top:30%;
+	left:30%;
+	line-height:3rem;
+	text-shadow:1px 1px 2px #000000;
+	}
+#cg {
+	position:relative;
+	width:auto;
+	height:1080px;
+	background-image:url(../images/background_painting.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:right;
+	}
+	
+#cg_content {
+	font-weight:normal;
+	cursor:pointer;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:2rem;
+	text-shadow:1px 1px 2px #000000;
+	position:relative;
+	top:40%;
+	text-align:center;
+	width:100%;
+	margin:0 auto;
+	}
+#photography {
+	position:relative;
+	width:auto;
+	height:1080px;
+	background-image:url(../images/background_photography.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:right;
+	}
+#photography_content {
+	font-weight:normal;
+	cursor:pointer;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:2rem;
+	text-shadow:1px 1px 2px #000000;
+	position:relative;
+	top:40%;
+	text-align:center;
+	width:50%;
+	margin:0 auto;
+	}
+#contact {
+	position:relative;
+	width:auto;
+	height:1080px;
+	background-image:url(../images/background_contact.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:left;
+	}
+#contact_content {
+	font-weight:normal;
+	margin:0 auto;
+	text-align:center;
+	width:18%;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:2rem;
+	position:relative;
+	top:40%;
+	line-height:3rem;
+	text-shadow:1px 1px 2px #000000;
+	}
+#contact_content a {
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:2rem;
+	text-decoration:none;
+	}
+}
+
+/*R500-R1023*/
+@media screen and (min-width:501px) and (max-width:1023px){
+		
+@font-face {
+	font-family:Trajan Pro;
+	src:url(../fonts/trajanpro-regular.otf);
+	}
+body {
+	margin:0px;
+	background-color:#000000;
+	}
+
+#menu {
+    padding: 0px;
+    margin: 0 0 10px 0;
+    position:fixed;
+	width:200px;
+	left:3%;
+	bottom:1%;
+	z-index:10;
+	font-family:"Trajan Pro";	
+}
+
+#menu li{
+	margin-top:10px;
+    font-size: 1.5rem;
+    display: block;
+}
+
+#menu li a{
+	color:#fff;
+	display: block;
+	text-decoration:none;
+	letter-spacing: 2px;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	text-shadow:1px 1px 2px #000000;
+}
+
+
+#menu:hover li a{
+	color:#5B5B5B;
+	text-shadow: 0px 0px 10px #5B5B5B;
+	text-decoration:none;
+}
+
+#menu li a:hover{
+	color: #fff;
+	text-shadow: 0px 0px 10px #fff;
+	padding-left: 10px;
+}
+	
+#about {
+	position:relative;
+	width:auto;
+	height:1080px;
+	background-image:url(../images/background_about.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:right;
+	}
+#about_content {
+	font-weight:normal;
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:2rem;
+	position:relative;
+	top:30%;
+	line-height:3rem;
+	text-shadow:1px 1px 2px #000000;
+	}
+#cg {
+	position:relative;
+	width:auto;
+	height:1080px;
+	background-image:url(../images/background_painting.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:50% 0%;
+	}
+	
+#cg_content {
+	font-weight:normal;
+	cursor:pointer;
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:2rem;
+	position:relative;
+	top:30%;
+	line-height:3rem;
+	text-shadow:1px 1px 2px #000000;
+	}
+	
+#photography {
+	position:relative;
+	width:auto;
+	height:1080px;
+	background-image:url(../images/background_photography.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:60% 10%;
+	}
+	
+#photography_content {
+	font-weight:normal;
+	cursor:pointer;
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:2rem;
+	position:relative;
+	top:30%;
+	line-height:3rem;
+	text-shadow:1px 1px 2px #000000;
+	}	
+	
+#contact {
+	position:relative;
+	width:auto;
+	height:1080px;
+	background-image:url(../images/background_contact.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:left;
+	}
+#contact_content {
+	font-weight:normal;
+	width:46%;
+	text-align:center;
+	margin:0 auto;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:2rem;
+	position:relative;
+	top:35%;
+	line-height:3rem;
+	text-shadow:1px 1px 2px #000000;
+	}
+	
+#contact_content a {
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:2rem;
+	text-decoration:none;
+	}
+}
+
+/*R320-R500*/
+@media screen and (max-width:500px){
+		
+@font-face {
+	font-family:Trajan Pro;
+	src:url(../fonts/trajanpro-regular.otf);
+	}
+body {
+	margin:0px;
+	background-color:#000000;
+	}
+	
+#menu {
+	width:30%;
+    padding: 0px;
+    margin: 0;
+    position:fixed;
+	left:1%;
+	bottom:1%;
+	z-index:10;
+	font-family:"Trajan Pro";
+}
+
+#menu li{
+	width:100%;
+	float:left;
+	padding:8px;
+    font-size: 0.8rem;
+    display: block;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(0,0,0,1), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(0,0,0,1), rgba(0,0,0,01)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));/* Standard syntax (must be last) */
+	margin:1px;
+}
+
+#menu li a{
+	color:#fff;
+	display: block;
+	text-decoration:none;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+
+#menu:hover li a{
+	color:#868686;
+	text-shadow: 0px 0px 10px #868686;
+	text-decoration:none;
+}
+
+#menu li a:hover{
+	color: #fff;
+	text-shadow: 0px 0px 10px #fff;
+	padding-left: 10px;
+}
+	
+#about {
+	position:relative;
+	width:auto;
+	height:773px;
+	background-image:url(../images/background_about.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:right;
+	}
+#about_content {
+	margin:0;
+	font-weight:normal;
+	width:auto;
+	text-align:center;
+	top:30%;
+	position:relative;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:1.2rem;
+	line-height:1.8rem;
+	text-shadow:1px 1px 2px #000000;
+	}
+#cg {
+	position:relative;
+	width:auto;
+	height:773px;
+	background-image:url(../images/background_painting.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	}
+
+#cg_content {
+	font-weight:normal;
+	cursor:pointer;
+	width:100%;
+	text-align:center;
+	top:30%;
+	position:relative;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:1.2rem;
+	line-height:1.8rem;
+	text-shadow:1px 1px 2px #000000;
+	width:320px;
+	margin:0 auto;
+	width:60%;
+	}
+
+#photography {
+	position:relative;
+	width:auto;
+	height:773px;
+	background-image:url(../images/background_photography.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:70% 10%;
+	}
+	
+#photography_content {
+	font-weight:normal;
+	cursor:pointer;
+	width:auto;
+	text-align:center;
+	top:30%;
+	position:relative;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:1.2rem;
+	line-height:1.8rem;
+	text-shadow:1px 1px 2px #000000;
+	margin:0 auto;
+	width:70%;
+	}
+
+#contact {
+	position:relative;
+	width:auto;
+	height:773px;
+	background-image:url(../images/background_contact.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:left;
+	}
+#contact_content {
+	font-weight:normal;
+	text-align:center;
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:1.2rem;
+	position:relative;
+	margin:0 auto;
+	top:40%;
+	line-height:3rem;
+	text-shadow:1px 1px 2px #000000;
+	}
+#contact_content a {
+	color:#FFFFFF;
+	font-family:"Trajan Pro";
+	font-size:1.2rem;
+	text-decoration:none;
+	}
+}
