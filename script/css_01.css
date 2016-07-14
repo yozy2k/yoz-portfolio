@@ -22,7 +22,6 @@ body {
     padding: 0px;
     margin: 0 0 10px 0;
     position:fixed;
-	width:200px;
 	left:1%;
 	bottom:8%;
 	z-index:10;
@@ -73,7 +72,7 @@ body {
 #about_content {
 	font-weight:normal;
 	margin:0;
-	width:100%;
+	width:60%;
 	color:#FFFFFF;
 	font-family:"Trajan Pro";
 	font-size:2rem;
@@ -83,6 +82,7 @@ body {
 	line-height:3rem;
 	text-shadow:1px 1px 2px #000000;
 	}
+	
 #cg {
 	position:relative;
 	width:auto;
