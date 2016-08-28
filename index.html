@@ -7,36 +7,7 @@
 <link rel="stylesheet" href="script/css_01.css"  type="text/css">
 <link rel="stylesheet" href="script/photoswipe.css"> <!--Photoswipe-->
 <link rel="stylesheet" href="script/default-skin.css"> <!--Photoswipe-->
-<script src="script/photoswipe.min.js"></script> <!--Photoswipe-->
-<script src="script/photoswipe-ui-default.min.js"></script> <!--Photoswipe-->
-<script src="script/smooth_scroll.js"></script><!--smooth scroll-->
-<script>
-// smooth scroll
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 300, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 </head>
 
 <body>
@@ -65,6 +36,7 @@ $(document).ready(function(){
 <h1 id="cg_content">Visit CG gallery.</h1>
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
+
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
     <!-- Background of PhotoSwipe. 
@@ -265,6 +237,7 @@ document.getElementById('cg_content').onclick = openPhotoSwipe;
 <h1 id="photography_content">Visit photo gallery.</h1>
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
+
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
     <!-- Background of PhotoSwipe. 
@@ -416,6 +389,35 @@ document.getElementById('photography_content').onclick = openPhotoSwipe;
 </div>
 </section>
 
+<script src="script/photoswipe.min.js"></script> <!--Photoswipe-->
+<script src="script/photoswipe-ui-default.min.js"></script> <!--Photoswipe-->
+<script src="script/smooth_scroll.js"></script><!--smooth scroll-->
+<script>
+// smooth scroll
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 300, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </body>
 </html>
