@@ -380,7 +380,7 @@ body {
 	position:relative;
 	width:auto;
 	height:773px;
-	background-image:url(../images/background_about.jpg);
+	background-image:url(../images/background_about_m.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:right;
@@ -402,7 +402,7 @@ body {
 	position:relative;
 	width:auto;
 	height:773px;
-	background-image:url(../images/background_painting.jpg);
+	background-image:url(../images/background_painting_m.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center;
@@ -429,7 +429,7 @@ body {
 	position:relative;
 	width:auto;
 	height:773px;
-	background-image:url(../images/background_photography.jpg);
+	background-image:url(../images/background_photography_m.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:70% 10%;
@@ -455,7 +455,7 @@ body {
 	position:relative;
 	width:auto;
 	height:773px;
-	background-image:url(../images/background_contact.jpg);
+	background-image:url(../images/background_contact_m.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:left;
